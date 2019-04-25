@@ -1,0 +1,30 @@
+<div class="login-window">
+  <form [formGroup]="enteredForm">
+    <table>
+      <tbody>
+        <tr>
+          <td>Username: </td>
+          <td>
+            <mat-form-field style=" width: 250px; padding-right: 20px;" floatlabel="never">
+              <input matInput type="text" required (change)="formChanged()" formControlName="username">
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>Password: </td>
+          <td>
+            <mat-form-field style=" width: 250px; padding-right: 20px;" floatlabel="never">
+              <input matInput type="password" required (change)="formChanged()" formControlName="password">
+            </mat-form-field>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+  <p>
+    <button mat-raised-button matTooltip="Correct account: admin password" color="primary" (click)="login()"
+      *ngIf="!authService.isLoggedIn">
+      Login</button>
+    <button mat-raised-button color="primary" (click)="logout()" *ngIf="authService.isLoggedIn">Logout</button>
+  </p>
+</div>

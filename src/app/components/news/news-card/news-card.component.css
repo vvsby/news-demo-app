@@ -1,0 +1,65 @@
+.title {
+    font-weight: bold;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.articleImg {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.text {
+    padding: 5px;
+    width: 100%;
+}
+
+img {
+    flex: content;
+    max-height: 100px;
+    border-radius: 10px;
+}
+
+.content {
+    font-size: 0.9em
+}
+
+.link {
+    cursor: pointer;
+    color: blue;
+}
+
+.description {
+    padding-bottom: 10px;
+}
+
+.button {
+    border: 1px gray;
+    border-radius: 5px;
+    background-color: blue;
+    color: aliceblue;
+    font-size: 0.8em;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.card {
+    border: 1px solid grey;
+    border-radius: 20px;
+    height: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.author {
+    float: right;
+    font-size: 0.8em;
+    font-style: italic;
+    margin: 10px;
+}
+
+.cleanLine {
+    clear: both;
+}

@@ -1,0 +1,38 @@
+.label {
+    font-weight: bold;
+    font-size: 1.15em;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+td {
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+.information {
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.profile {
+    width: 100%;
+}
+
+.column {
+    color: blue;
+    vertical-align: middle;
+}
+
+.img {
+    width: 100px;
+}
+
+img {
+    max-width: 100px;
+    border-radius: 30px;
+}

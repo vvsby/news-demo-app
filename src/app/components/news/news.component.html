@@ -1,0 +1,24 @@
+<div class="news-feed">
+  <!-- <div style="width: 100%; display: table;">
+    <div style="display: table-header-group;">
+      <div style="display: table-cell;">Source</div>
+      <div style="display: table-cell;">Image</div>
+      <div style="display: table-cell;">Content</div>
+    </div> -->
+  <cdk-virtual-scroll-viewport style="height: 800px; width: 100%" itemSize="10">
+    <div class="table">
+      <div class="row header">
+        <!-- <div class="cell">Source</div>
+        <div class="cell">Image</div>
+        <div class="cell">Content</div> -->
+      </div>
+      <div *cdkVirtualFor="let article of news.articles; trackBy: trackByForArticles" class="row">
+        <app-news-card [article]="article"></app-news-card>
+        <!--  <div class="cell">{{article.source.name}}</div>
+        <div class="cell"><img [src]="article.urlToImage"></div>
+        <div class="cell">{{article.content}}</div> -->
+      </div>
+    </div>
+  </cdk-virtual-scroll-viewport>
+  <!--  -->
+</div>

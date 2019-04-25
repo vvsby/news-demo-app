@@ -1,0 +1,66 @@
+<div class="profile">
+  <table *ngIf="user && user.imgUrl">
+    <tbody>
+      <tr>
+        <td class="img">
+          <img [src]="user.imgUrl">
+        </td>
+        <td>
+          <p class="label">Information about user</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table *ngIf="user">
+    <tbody>
+      <tr>
+        <td class="column">
+          Username:
+        </td>
+        <td class="information">
+          {{user.username}}
+        </td>
+      </tr>
+      <tr>
+        <td class="column">
+          Name:
+        </td>
+        <td class="information">
+          {{user.name}}
+        </td>
+      </tr>
+      <tr>
+        <td class="column">
+          Surname:
+        </td>
+        <td class="information">
+          {{user.surname}}
+        </td>
+      </tr>
+      <tr>
+        <td class="column">
+          E-mail:
+        </td>
+        <td class="information">
+          {{user.mail}}
+        </td>
+      </tr>
+      <tr>
+        <td class="column">
+          Mobile phone:
+        </td>
+        <td class="information">
+          {{user.mobilePhone}}
+        </td>
+      </tr>
+      <tr>
+        <td class="column">
+          About:
+        </td>
+        <td class="information">
+          {{user.about}}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,21 @@
+<div class="card" *ngIf="article" style="display: flex; width: 95%;">
+  <div class="text">
+    <div class="title" (click)="openLink(article.url)">{{article.title}}</div>
+    <div class="description">{{article.description}} </div>
+    <div *ngIf="!showMore" (click)="showMore = !showMore" class="button">Show more</div>
+    <div *ngIf="showMore" (click)="showMore = !showMore" class="button">Show less</div>
+    <br>
+    <div class="content" *ngIf="showMore">
+      {{article.content | clean}}
+      <span (click)="openLink(article.url)" class="link">
+        [Open full news]
+      </span>
+    </div>
+    <div class="author">
+      {{article.source.name}} / {{article.author}}
+    </div>
+  </div>
+  <div class="articleImg">
+    <img [src]="article.urlToImage">
+  </div>
+</div>

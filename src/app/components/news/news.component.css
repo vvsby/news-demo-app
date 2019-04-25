@@ -1,0 +1,26 @@
+.cell {
+    display: table-cell;
+}
+
+.row {
+    display: table-row;
+    width: 85%;
+}
+
+.header {
+    font-weight: bold;
+}
+
+.table {
+    width: 100%;
+    display: table;
+    margin: 20px;
+}
+
+img {
+    max-width: 200px;
+}
+
+.news-feed {
+    width: 100%;
+}
